@@ -1,0 +1,23 @@
+# Virtual Machine Disks and Files (Do NOT commit multi-GB binaries to GitHub)
+*.vdi
+*.vbox
+*.vbox-prev
+*.sav
+*.nvram
+*.vmdk
+*.vhdx
+
+# Operating System Installation ISOs
+*.iso
+*.img
+
+# Logs and Caches
+*.log
+Logs/
+VMs/
+VM_ISOs/
+
+# OS-specific clutter
+Thumbs.db
+Desktop.ini
+.DS_Store
