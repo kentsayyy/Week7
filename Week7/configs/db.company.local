@@ -1,0 +1,22 @@
+;
+; BIND data file for company.local zone (Small Office Network Exercise)
+; IT 123 - Week 7: Configuring and Securing Network Services
+; Student: Jhon Kenneth S. Aguilar (BSIT 4B)
+;
+$TTL    604800
+@       IN      SOA     ns1.company.local. admin.company.local. (
+                     2026101101         ; Serial (YYYYMMDDNN)
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+; Name Servers
+@       IN      NS      ns1.company.local.
+
+; Canonical A Records
+@       IN      A       192.168.1.150
+ns1     IN      A       192.168.1.150
+www     IN      A       192.168.1.150
+intranet IN     A       192.168.1.150
+ftp     IN      A       192.168.1.150

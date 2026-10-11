@@ -1,0 +1,17 @@
+//
+// /etc/bind/named.conf.local
+// IT 123 - Week 7: Configuring and Securing Network Services
+// Student: Jhon Kenneth S. Aguilar (BSIT 4B)
+//
+
+// Part 1: Initial lab zone
+zone "example.local" {
+    type master;
+    file "/etc/bind/db.example.local";
+};
+
+// Part 6: Student Exercise Small Office Network zone
+zone "company.local" {
+    type master;
+    file "/etc/bind/db.company.local";
+};

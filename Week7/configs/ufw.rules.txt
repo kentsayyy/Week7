@@ -1,0 +1,23 @@
+# UFW Firewall Active Rule Specifications
+# IT 123 - Week 7: Configuring and Securing Network Services
+# Command: sudo ufw status verbose
+
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere                   # OpenSSH Administrative Channel
+53/tcp                     ALLOW IN    Anywhere                   # BIND9 DNS Zone Transfers / TCP
+53/udp                     ALLOW IN    Anywhere                   # BIND9 DNS Standard Resolution / UDP
+80/tcp                     ALLOW IN    Anywhere                   # Apache2 Intranet Web Server
+21/tcp                     ALLOW IN    Anywhere                   # vsftpd FTP Command Channel
+40000:40100/tcp            ALLOW IN    Anywhere                   # vsftpd Passive Mode Data Ports
+22/tcp (v6)                ALLOW IN    Anywhere (v6)              # OpenSSH Administrative Channel (v6)
+53/tcp (v6)                ALLOW IN    Anywhere (v6)              # BIND9 DNS TCP (v6)
+53/udp (v6)                ALLOW IN    Anywhere (v6)              # BIND9 DNS UDP (v6)
+80/tcp (v6)                ALLOW IN    Anywhere (v6)              # Apache2 Intranet Web Server (v6)
+21/tcp (v6)                ALLOW IN    Anywhere (v6)              # vsftpd FTP Command Channel (v6)
+40000:40100/tcp (v6)       ALLOW IN    Anywhere (v6)              # vsftpd Passive Mode Data Ports (v6)
