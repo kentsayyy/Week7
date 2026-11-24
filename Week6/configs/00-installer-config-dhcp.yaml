@@ -1,0 +1,8 @@
+﻿# /etc/netplan/00-installer-config.yaml
+# Dynamic Host Configuration Protocol (DHCPv4) Default
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: true

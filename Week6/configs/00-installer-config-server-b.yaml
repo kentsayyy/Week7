@@ -1,0 +1,9 @@
+﻿# /etc/netplan/00-installer-config.yaml
+# Part 6 Student Exercise: Server B (Dynamic DHCP)
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: true
+      dhcp-identifier: mac
